@@ -71,8 +71,9 @@ In order to help with future development of this program, it would be helpful to
 In the early stages of the coding, the only variable that was of focus was the winning candidate. As a second measure was added - looking at the county vote turnout - it became increasingly difficult to retrieve the intended output. While the output was still retrievable, some realignment or relocation of the code would make it a bit more logistical. This focus would also be helpful, as it would help identify the areas that need to be mended if the desired results are not met. 
 Finally, a new area of focus or measure that is added could hopefully be included in a less complicated format. This may not always be the case, depending on the results that are being achieved. In any case, using f-strings is highly recommended, as they are more time efficient. 
 For example, look at the code used below to identify the results for the county vote turnout. Using helpful strings, such as this will help with using time efficiently when creating the program. 
-county_results = (f"{county_name}: {county_vote_percentage:.1f}% ({county_votes:,})\n")
-       print(county_results)
+
+            county_results = (f"{county_name}: {county_vote_percentage:.1f}% ({county_votes:,})\n")
+            print(county_results)
 
 #### Reliability
 One other area to consider is that of reliability. How much of this information collected is actually correct? On one hand, removing people from counting individual ballots could help avoid problems such as human error (intended or unintended). However, using code to count is also questionable. How reliable is the data?
